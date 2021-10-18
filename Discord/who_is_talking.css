@@ -1,0 +1,19 @@
+/*喋ってる人を分かり易くする*/
+li.voice-state:not([data-reactid*="ユーザーID"]) { display:none; }
+.avatar {
+  content:url(画像URL);
+  height:auto !important;
+  width:auto !important;
+  border-radius:0% !important;
+  filter: brightness(50%);
+}
+
+.speaking {
+  border-color:rgba(0,0,0,0) !important;
+  filter: brightness(100%);
+}
+
+li.voice-state{ position: static; }
+div.user{ position: absolute; left:40%; bottom:5%; }
+
+body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
