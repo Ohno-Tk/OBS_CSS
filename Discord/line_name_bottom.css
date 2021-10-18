@@ -1,0 +1,39 @@
+/*アバターを横並びにします。名前はアイコンの下に表示します。*/
+
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.voice-states * {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.voice-state { 	
+  width: 70px;
+  height: 90px;
+} 
+.avatar {
+  left: 7px;
+}
+.user {
+  left: 2px;
+  top: 2px;
+  background: rgba(0,0,0,.7);
+  padding: 4px 5px 0px !important;
+  border-radius: 4px;
+}
+.name {
+  width: 55px;
+  height: 17px;
+  line-height: 17px !important;
+  white-space: nowrap;
+  text-overflow: clip;
+  text-align: center;
+  background-color: rgba(0,0,0,0) !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
