@@ -1,0 +1,2 @@
+# OBS_CSS
+OBSで使えるCSS集
