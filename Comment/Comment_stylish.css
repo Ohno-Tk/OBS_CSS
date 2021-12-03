@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&display=swap");
+    * {
+        font-family: 'M PLUS 1p', sans-serif;
+        font-size: 18px;
+        }
+    img.yt-img-shadow {
+        display: none;
+        width: 0;
+        }
+    yt-live-chat-text-message-renderer {
+        transform: rotate(-3deg);
+        margin-bottom: 20px;
+        padding: 0;
+        margin-top: -10px;
+        margin-left: 20px;
+        }
+    yt-live-chat-app yt-live-chat-text-message-renderer:nth-child(odd) {
+        transform: rotate(3deg);
+        margin-top: 40px;
+        margin-left: 50px;
+        }
+
+    yt-live-chat-author-chip {
+        padding:5px 10px ;
+        background-color: #ff0090;
+        transform : skew(5deg,5deg);
+        color: #fff!important;
+        display: inline-block;
+        margin-left: -20px;
+        transform : skew(-5deg,-5deg)
+        }
+
+    span#message {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+        color: #fff!important;
+        font-size: 20px;
+        line-height: 1.5;
+        z-index: 99999;
+        background:#111;
+        }
+
+    yt-live-chat-header-renderer,
+    yt-live-chat-viewer-engagement-message-renderer,
+    div#ticker,
+    #input-panel {display: none;}
+    #author-name {color: #fff!important;}
+
+    yt-live-chat-text-message-renderer,
+    yt-live-chat-text-message-renderer[is-highlighted] {
+        background-color: transparent !important;
+        }
+
+    #contents {background: #111;}
