@@ -1,0 +1,63 @@
+.avatar {
+  height:100px !important;
+  width:100px !important;
+  border-radius:0 !important;
+  filter: brightness(50%);
+}
+ 
+/*トーク中の画像の状態設定*/
+.speaking {
+  border-color:rgba(0,0,0,0) !important;
+  position:relative;
+  animation-name: speak-now;
+  animation-duration: 5000ms;
+  animation-fill-mode:forwards;
+  filter: brightness(100%) ;
+}
+/*トーク中のアニメーション設定*/
+@keyframes speak-now {
+  0% { bottom:0px; }
+  5% { bottom:10px; }
+  10% { bottom:0px; }
+  15% { bottom:10px; }
+  20% { bottom:0px; }
+  25% { bottom:10px; }
+  30% { bottom:0px; }
+  35% { bottom:10px; }
+  40% { bottom:0px; }
+  45% { bottom:10px; }
+  50% { bottom:0px; }
+  55% { bottom:10px; }
+  60% { bottom:0px; }
+  65% { bottom:10px; }
+  70% { bottom:0px; }
+  75% { bottom:10px; }
+  80% { bottom:0px; }
+  85% { bottom:10px; }
+  90% { bottom:0px; }
+  95% { bottom:10px; }
+  100% { bottom:0px; }
+}
+
+/* 自身を非表示にする
+li.voice-state[data-reactid$="自分のdiscordID"] {
+ display:none;
+}
+*/
+ 
+/* 画像と名前の位置調整*/
+li.voice-state{
+ position: static;
+ display: inline-block;
+ width: 130px;
+ height: 100px;
+}
+.user{
+ display: inline-block;
+}
+span.name{
+ display: inline-block;
+ position: relative;
+ bottom: 20px;
+ left: 25px;
+}
