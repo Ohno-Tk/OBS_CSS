@@ -1,4 +1,4 @@
-body {background: transparent!important;}
+* {background: transparent!important;}
 img {
 	animation: anime 8s linear 0.2s infinite;
 	max-height: 40%;
